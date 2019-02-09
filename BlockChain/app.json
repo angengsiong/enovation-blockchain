@@ -1,0 +1,6 @@
+{
+    "name": "blockchain-enovation",
+    "description": "A sample of blockchain system of enovation project",
+    "repository": "https://github.com/angengsiong/enovation",
+    "keywords": ["python", "flask" ]
+  }

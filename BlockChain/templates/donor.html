@@ -1,0 +1,29 @@
+{% extends "base1.html" %} {% block content %}
+<form action="{{ url_for('donor') }}" method="POST">
+    <div class="form-group">
+        <label for="donee">选择捐助方</label>
+        <input type="text" class="form-control" id="text" placeholder="输入署名" name="donee" value="{{ request.form.get('donee', '') }}">
+        <label for="money">捐助金额</label>
+        <input type="number" class="form-control" id="text" placeholder="输入金额" name="money" value="{{ request.form.get('money', '') }}">
+        <label for="donor">署名</label>
+        <input type="text" class="form-control" id="text" placeholder="输入署名" name="donor" value="{{ request.form.get('donor', '') }}">
+        <label for="info">附带信息（选填）</label>
+        <input type="text" class="form-control" id="text" placeholder="输入署名" name="info" value="{{ request.form.get('info', '') }}">
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">存储信息</button>
+</form><br> {% endblock %} 
+<hr> {% block mining %}
+<form action="{{ url_for('mining') }}" method="POST">
+    <button type="submit" class="btn btn-primary btn-lg btn-block">提交</button>
+</form>
+{% if querry %}
+<hr>
+<div class="alert alert-success" role="alert">
+    <strong>成功捐款</strong>
+</div>
+<hr><br> {% endif %}
+
+
+<br>{% endblock %}
