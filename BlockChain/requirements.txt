@@ -32,7 +32,7 @@ infinity==1.4
 inflection==0.3.1
 intervals==0.8.1
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 mongoengine==0.16.3
 ndg-httpsclient==0.5.1
